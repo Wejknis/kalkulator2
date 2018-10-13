@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 void info_dla_uzytkownika();
+
 void pobieranie_zmiennych(double *a, double *b, char *zn);
+
 void operacje(double a, double b, char zn);
 
 void main() {
@@ -15,24 +17,23 @@ void main() {
 void operacje(double a, double b, char zn) {
     switch (zn) {
         case '+' :
-            printf("%4.3lf", a + b);
+            printf("Wynik: %4.3lf", a + b);
             break;
         case '-' :
-            printf("%4.3lf", a - b);
+            printf("Wynik: %4.3lf", a - b);
             break;
         case '*' :
-            printf("%4.3lf", a * b);
+            printf("Wynik: %4.3lf", a * b);
             break;
         case '/' :
-            if(b)
-            {
-                printf("%lf", a / b);
-            } else
-            {
+            if (b) {
+                printf("Wynik: %lf", a / b);
+            } else {
                 printf("nie dzieli się przez 0");
             }
             break;
-        default : printf("nieprawidłowe działanie");
+        default :
+            printf("nieprawidłowe działanie");
     }
 }
 
