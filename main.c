@@ -17,17 +17,17 @@ void main() {
 void operacje(double a, double b, char zn) {
     switch (zn) {
         case '+' :
-            printf("Wynik: %4.3lf", a + b);
+            printf("Wynik dodawania: %4.3lf", a + b);
             break;
         case '-' :
-            printf("Wynik: %4.3lf", a - b);
+            printf("Wynik odejmowania: %4.3lf", a - b);
             break;
         case '*' :
-            printf("Wynik: %4.3lf", a * b);
+            printf("Wynik mnożenia: %4.3lf", a * b);
             break;
         case '/' :
             if (b) {
-                printf("Wynik: %lf", a / b);
+                printf("Wynik dzielenia: %lf", a / b);
             } else {
                 printf("nie dzieli się przez 0");
             }
